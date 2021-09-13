@@ -62,6 +62,23 @@ def double_char(str):
 j = double_char("yo")
 print(j)
 
+class Bot:
+  def __init__(self, name, version, function, rating):
+    self.name = name
+    self.version = version
+    self.function = function
+    self.rating = rating
+  def botname(self):
+    return "Bot's name" + self.name
+  def bottype(self):
+    return "Bot Version: " + self.version
+    return "Bot Function: " + self.function
+    return "How would you rate the bot? " + self.rating
+
+m = Bot("NewBot", "v1.3.9", "Charge cells", "5 stars")
+m.botname()
+m.bottype()
+    
 def str_int(txt):
   return int(txt)
 
