@@ -663,6 +663,10 @@ print(a)
 a2 = [t**2 for t in range(6, 0, -1)]
 print(a2)
 
+# another reversed list
+t = [1, 2, 4, 6, 7, 10]
+print(t[::-1])
+
 # Sets in Py | Create a set
 t = set()
 print(t)
@@ -721,6 +725,12 @@ print(z)
 w = "yes"
 print(w + w)
 # and etc...
+
+# You can use the help() keyword if you need help with something in python.
+help("assert") # prints information on the assert statement
+# How to print the id of something
+t = 5
+print(id(t))
 
 # Clesses & Objects in PY
 # Self is used to represent the instance of the class in py
