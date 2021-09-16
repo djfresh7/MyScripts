@@ -563,7 +563,39 @@ v = 1
 del v
 
 # nonlocal statement
-# 
+# The use of nonlocal keyword is very much similar to the global keyword. 
+# The nonlocal statement is used to declare that a variable inside a nested function (function inside a function) is not local to it, meaning it lies in the outer inclosing function.
+# The nonlocal keyword is used to work with variables inside nested functions, where the variable should not belong to the inner function.
+# Use the keyword nonlocal to declare that the variable is not local.
+def outer():
+  t = 1
+  def inner():
+    nonlocal t
+    t = 2
+  inner()
+
+# Here, the inner() is nested within the outer.
+# The variable t is in the outer(). So, if we want to modify it in the inner(),
+# we must declare it as nonlocal. Notice that a is not a global variable.
+def new_function():
+  r = 5
+  def old_function():
+    r = 10
+    return "Old Function", r
+  old_function()
+  return "New Function", r
+print(new_function())
+# This is what happens when you don't use the nonlocal statement.
+# Here, we do not declare that the variable a inside the nested function is nonlocal. 
+# Hence, a new local variable with the same name is created, but the non-local a is not modified as seen in our output.
+def myfunc1():
+  f = "Yes"
+  def myfunc2():
+    nonlocal f
+    f = "No"
+  myfunc2()
+  return f
+print(myfunc1())
 
 # raise statement
 # The raise keyword is used to raise an exception. You can define what kind of error to raise, and the text to print to the user.
