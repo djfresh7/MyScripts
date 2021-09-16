@@ -55,6 +55,13 @@ def traits(x, y):
 l = traits(4, 8)
 print(l)
 
+# A nested function is a function inside a function.
+# Example:
+def func():
+  pass
+  def ok():
+    pass
+
 # lambda statement
 # lambda is used to create an anonymous function (function with no name). It is an inline function that does not contain a return statement. It consists of an expression that is evaluated and returned.
 # Anonymus Function
