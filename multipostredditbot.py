@@ -23,8 +23,9 @@ for subreddit in subreddits:
         else:
           wait = 1
         print("Waiting for", wait, "minutes...")
-        time.sleep(wait)
+        time.sleep(wait*60)
         reddit.subreddit(subreddit).submit(title=t, url=l, send_replies=True)
         print("Successfully posted to:", subreddit, "Posted to", count, "of", len(subreddits), "subreddits")
       else:
         continue
+        
