@@ -785,3 +785,34 @@ me.weight = 5
 # Run the objects
 me.introduce_yself()
 t1.introduce_yself()
+
+# Arrays
+t = ([3, 2, 4], [4, 6, 8])
+print(t[0][0])
+print([1, [4, 5, 9], 4][1][0])
+print(["hi"][0])
+print([True, False][0])
+print([3.5, 8.9, 1.4][2])
+u = lambda txt: txt
+print([f"Hi: {u(1)}"])
+
+# F strings are formatted strings.
+print(f"Simple List {anewlist}")
+
+# .format works exactly like f-strings but instead of using f"" you put the string first then put .format based on the amount of curly brackets in the string.
+print("Yes: {}".format(t))
+
+# Min() prints the smallest item in the given data.
+# Max() prints the biggest item in the given data.
+r = (1, 4, 5, 8)
+print(min(r))
+print(max(r))
+
+h = 10
+i = 1
+smh = 0
+
+while i <= h:
+  smh += i
+  i += 1
+print(smh)
