@@ -17,6 +17,23 @@
 # Empty strings ("") will give a space in between things in python.
 # "\n" Acts as an enter key in python, it creates new line spaces.
 
+# import statement
+# The import statement is used to import modules into your python script. You can also import methods from somewhere in a package or module and even rename it to whatever you like.
+import time # import the time module
+import random # import the random library
+import os # The is library
+# etc...
+
+import time as t # imported the time module but renamed it to t
+import random as r # imported the random module but renamed it to r
+import os as opsys # imported the os module but renamed it to opsys
+# etc...
+
+from time import sleep # imported the sleep method from the time module
+from random imoort randrange # imported the randrange method from the random module
+from os import getcwd # imported the getcwd method from the os module
+# etc...
+
 # print statement
 # The print statement prints out to the console whatever you put in the parenthesis.
 # variables
@@ -563,6 +580,21 @@ get()
 # await statement
 
 # assert statement
+# assert is used for debugging purposes. 
+# While programming, sometimes we wish to know the internal state or check if our assumptions are true. assert helps us do this and find bugs more conveniently. Assert is followed by a condition.
+# If the condition is true, nothing happens. But if the condition is false, AssertionError is raised.
+r = random.randrange(1, 10)
+assert r # Checks if r is True and won't give any errors. In this case, r is True.
+m = False
+assert m # Checks if m is True and won't give errors. In this case m is False, which is the opposite of True, so it will give an error.
+# This error is called AssertionError.
+assert 50 > 60 # False, so AssertionError
+t = "Rex"
+assert t == "Mark" # False, so AssertionError
+assert 9 == 9 # True, so no AssertionError
+assert 4 - 1 == 3 # True, so no AssertionError
+i = [False, False]
+assert i # False, so AssertionError
 
 # del statement
 # The del statement is used to delete objects. This could be a variable, function, class and so much more.
