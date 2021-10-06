@@ -22,6 +22,9 @@ function calculator(num1, op, num2){
   }
 }
 
+// Call the function
+console.log(calculator(2, "-", 1))
+
 // JS variables
 var a = 0
 let g = 2
