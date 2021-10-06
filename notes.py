@@ -35,7 +35,11 @@ from os import getcwd # imported the getcwd method from the os module
 # etc...
 
 # print statement
-# The print statement prints out to the console whatever you put in the parenthesis.
+# The print statement prints the output of the given value in the arguments.
+print(0, "hi")
+print("Hi", True)
+print("etc...")
+
 # variables
 t = 5
 d = 8
