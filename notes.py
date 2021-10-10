@@ -1,6 +1,6 @@
 # How to run a Python file = python3 or python (filename)
 # How to run a Javascript file = node . or node (filename)
-# How to stop any script file = CTRL + C
+# How to stop any script = CTRL + C
 
 # All My Python Notes
 
@@ -16,6 +16,8 @@
 # * = times, / = divide, + & - = add & subtract
 # Empty strings ("") will give a space in between things in python.
 # "\n" Acts as an enter key in python, it creates new line spaces.
+# Syntax: The structure of statements in a computer language.
+# The key is to Learn, Understand & Practice.
 
 # import statement
 # The import statement is used to import modules into your python script. You can also import methods from somewhere in a package or module and even rename it to whatever you like.
@@ -348,12 +350,20 @@ while True:
     break
 print(total5)
 
-# != is not equal
-# == is equal
+# != not equal to
+# == equal to
 # += plus equal
 # -= minus equal
-# <= less than equal
-# >= greater than equal
+# <= less than or equal to
+# >= greater than or equal to
+# := The walrus operator: 
+"""
+The walrus operator is used as an assignment expression. It allows you to assign a value to a variable while also returning the value.
+"""
+
+# Walrus Operator examples
+print(b := 4 > 1)
+# Output: True
 
 t = ["what", "no", "yes"]
 
@@ -581,7 +591,7 @@ def get():
 
 get()
 
-# await statement
+# async & await statements
 
 # assert statement
 # assert is used for debugging purposes. 
@@ -768,9 +778,9 @@ help("assert") # prints information on the assert statement
 t = 5
 print(id(t))
 
-# Clesses & Objects in PY
-# Self is used to represent the instance of the class in py
-# __init__ is a constructor
+# Clesses & Objects in PY | OOP (Object Oriented Programming)
+# Self is used to represent the instance of a class in python.
+# __init__ is a constructor, it initializes a class.
 class Bot:
   def __init__(self, name, color, weight):
     self.name = name
@@ -802,6 +812,7 @@ a2.bot = m
 
 a1.bot.introduce_self()
 
+# Example Class without the __init__ constructor.
 class HydroBot:
   def introduce_yself(self):
     print("Your name is ", self.name)
@@ -848,7 +859,18 @@ h = 10
 i = 1
 smh = 0
 
+# Simple while loop
 while i <= h:
   smh += i
   i += 1
 print(smh)
+
+# Python all() & any()
+
+# All checks if everything is True within the given argument.
+if all(z):
+  print("All is True!")
+
+# Any checks if any value in the given argument is True.
+if any(z):
+  print("One thing is True!")
