@@ -1,73 +1,120 @@
 <!-- Main HTML Document Layout -->
-
-<!DOCTYPE html>
+<!DOCTYPE html> <!-- HTML Document declaration -->
 <html lang="en">
 <head>
     <!-- Meta tags -->
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title> <!-- doc title -->
+    <title>My HTML Notes</title> <!-- Doc Title -->
 </head>
 <body>
     <!-- Formatting tags -->
-    <header>
-        <h1></h1> <!-- This go up all the way to 6 -->
-        <p></p>
+    <header> <!-- Header tag -->
+        <h1></h1> <!-- Heading tag | This go up all the way to h6 -->
+        <p></p> <!-- Paragraph tag -->
     </header>
-    <main>
-        <article>
+    <main> <!-- Main tag -->
+        <article> <!-- Article tag -->
         </article>
-        <aside>            
+        <aside> <!-- Aside tag -->
         </aside>
-        <nav>
+        <nav> <!-- Nav tag | Navigation -->
         </nav>
-        <section>
-            <ul> Unordered List
+        <section> <!-- Section tag -->
+            <ul> <!-- Unordered List -->
                 <li>Tags</li>
                 <li>Functions</li>
                 <li>Sets</li>
-                <></Dictionaries>
+                <li>Lists</li>
             </ul>
-            <ol> Ordered List
+            <ol> <!--Ordered List -->
                 <li>Apple</li>
                 <li>Banana</li>
                 <li>Carrots</li>
                 <li>Guinep</li>
             </ol>
-            <dl> Description List (Unpopular)
-                <dt></dt>
-                <dd></dd>
+            <dl> <!-- Description List (Unpopular) -->
+                <dt>Storage</dt>
+                <dt>Planted</dt>
+                <dd>Stored</dd>
+                <dd>Produced</dd>
             </dl>
         </section>
-        <input type="month">
-        <form></form>
-        <video src="source here" controls loop autoplay alt="if the video doesn't load, this text will appear"></video>
-        <img src="image address here" alt="you know what this does.">
-        <a href="link source"></a>
+        <input type="month"> <!-- Input tag | Receives inputted imformation -->
+        <form> <!-- Form tag | Will update this tag -->
+        </form>
+        <video src="source here" controls loop autoplay alt="if the video doesn't load, this text will appear"></video> <!-- Video tag | Displays a video. -->
+        <img src="image address here" alt="you know what this does."> <!-- Image tag | Displays an image. -->
+        <a href="link source">A Link</a> <!-- Link tag | This can be displayed as many elements, but whenever you click it, it shoud always take you to a specific link.-->
         <style>
             /* Put your CSS styles here... */
         </style>
         <script>
             // Put your JS functions here...
         </script>
-        <button onclick="js func here"></button>
+        <button onclick="js_func_here()"></button> <!-- Button tag | Displays a button, you can cofigure this a lot. -->
         <!-- Text tags -->
-        <hr> horizontal line across the page
-        <br> breaks into a new line
-        <sup></sup> Formats the text on top eg: 1m^2, the ^ in thml would be this tag.
-        <sub></sub> Does the opposite of the sup tag.
-        <big></big> Makes the text bigger.
-        <b></b> Bolds the text.
-        <i></i> Italics the text.
-        <u></u> Underlines the text.
+        <hr> <!-- Horizontal line across the page -->
+        <br> <!-- Breaks into a new line -->
+        <sup></sup> <!-- Formats the text on top eg: 1m^2, the ^ in thml would be this tag. -->
+        <sub></sub> <!-- Does the opposite of the sup tag. -->
+        <big></big> <!-- Makes any text bigger. -->
+        <b></b> <!-- Bolds the text. -->
+        <i></i> <!-- Italics the text. -->
+        <u></u> <!-- Underlines the text. -->
     </main>
-    <footer>
-        <div>
-
+    <footer> <!-- Footer tag -->
+        <!-- Tables are structured datatypes in HTML -->
+        <!-- Here is an example of a Table -->
+        <table class="tabel" border="4"> <!-- Border is the border of the table -->
+            <caption><big>INFORMATION</big></caption> <!-- Caption represents the name of table -->
+            <thead> <!-- Table Head -->
+                <tr>
+                    <th colspan="2"></th> <!-- Table Header | Colspan represents the column size of a table header -->
+                    <th>LISTS</th>
+                    <th>SETS</th>
+                </tr>
+                <tr>
+                    <td>APPLE</td> <!-- Table Data represents the information in table -->
+                    <td>BANANA</td>
+                    <td>ORANGE</td>
+                </tr>
+            </thead>
+            <tbody> <!-- Table Body -->
+                <tr>
+                    <th>C++</th>
+                    <th>NODE.JS</th>
+                    <th>PYTHON</th>
+                </tr>
+                <tr>
+                    <td>YAML</td>
+                    <td>TOML</td>
+                    <td>XML</td>
+                </tr>
+            </tbody>
+            <tfoot> <!-- Table Foot -->
+                <tr>
+                    <th>HTML</th>
+                    <th>CSS</th>
+                    <th>JS</th>
+                </tr>
+                <tr>
+                    <td>MOVIE</td>
+                    <td>TV SHOW</td>
+                    <td>SPORTS</td>
+                </tr>
+            </tfoot>
+        </table>
+        <div>A Div
+            <!-- Divs are block element containers in HTML which means that when two or more are created,
+            they will be separated from each other, like in an unordered list form. -->
+            <!-- You can put anything in divs & it will be stored in it. -->
         </div>
-        <span>
-
+        <span>A Span
+            <!-- Spans are inline element containers in HTML which means that when two or more are created,
+            they will not be separated from each other, they will be beside each other. -->
+            <!-- You can put anything in spans & it will be stored in it. -->
         </span>
     </footer>
 </body>
