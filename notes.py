@@ -1,5 +1,7 @@
 # How to run a Python file = python3 or python (filename)
 # How to run a Javascript file = node . or node (filename)
+# How to run a C or C++ file = gcc ot g++ (filename)
+
 # How to stop any script = CTRL + C
 
 # All My Python Notes
@@ -364,6 +366,15 @@ The walrus operator is used as an assignment expression. It allows you to assign
 # Walrus Operator examples
 print(b := 4 > 1)
 # Output: True
+print(b := 2 < 1)
+# Instead of
+g = True
+print(g)
+# You can go
+print(g := True)
+print(j := 3)
+j = 1
+print(j)
 
 t = ["what", "no", "yes"]
 
@@ -865,12 +876,88 @@ while i <= h:
   i += 1
 print(smh)
 
-# Python all() & any()
-
+# Python all()
 # All checks if everything is True within the given argument.
 if all(z):
   print("All is True!")
 
+# Python any()
 # Any checks if any value in the given argument is True.
 if any(z):
   print("One thing is True!")
+  
+# Python Splat Operators
+# The *args operator is used to receive unlimited arguments in a function.
+# The **kwargs operator is used to receice unlimited keyword agruments in a function.
+def getargs(*args, **kwargs):
+  return args * 2
+  return kwargs * 2
+# As you can see, I can use as much agruments as I want when calling the getargs() function.
+print(getargs(1, 2, 5, 6, 2, 4))
+print(getargs(file, t := 1, g := True))
+
+# Python abs()
+# The Python abs() method returns the absolute value of a number. The absolute value of a number is the number's distance from 0. This makes any negative number positive, while positive numbers are unaffected.
+print(abs(-4))
+print(abs(-6))
+print(abs(10))
+
+# Python enumerate()
+r = ["Math", "Physics", "R.E."]
+u = 0
+for i in r:
+  u += 1
+  print(u, i)
+# As you can see, the above loop didn't return the index of the items properly, which is were enumerate() comes in.
+for indx, sub in enumerate(r):
+  print(indx, sub)
+# enumerate fixes the problem by taking the correct index & the item and sorting them in order with the for loop.
+
+# Python chr()
+# chr does the opposite of ord, it returns the character of the given integer value.
+print(chr(97)) # a
+print(chr(65)) # A
+print(chr(110)) # n
+
+# Python ord()
+# ord returns the integer value of the given character.
+r = "q"
+print(ord(r))
+print(ord(t := "w"))
+print(ord(f := "t"))
+
+# Python bin()
+# bin gives the binary numbers of an integer.
+print(bin(6))
+print(bin(2_999_090))
+print(bin(69))
+
+# Python zip()
+# Zip combines iterables together.
+# A simple dictionary and a list
+z = {"r": 1, 1: "e", "no": False}
+g = ["hi", "r", True, "M"]
+h = ["mark", "bex", "huh", 4]
+f = [1, 3, 4, 7, 5]
+# zip function
+d = zip(z, g, f, h)
+for a, r, t, g in d:
+  print(a, r, t, g)
+
+# Python callable()
+# callable eturns True if the specified object is callable, otherwise False.
+f = {"Yes": 1, "Gart": 3, "Vet": 8}
+t = lambda x: x
+r = "Hello"
+# callable checks if any of these are callable like a when you call a function.
+print(callable(t)) # True
+print(callable(f)) # False
+print(callable(r)) # False
+
+# Python round()
+# round returns the rounded version of a decimal (float)
+print(round(1.67)) # 2 (according to CS)
+print(round(4.02)) # 4 (according to CS)
+print(round(8.91)) # 9 (according to CS)
+  
+# Next: Magic/Dunder Methods in Python.
