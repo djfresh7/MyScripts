@@ -1,4 +1,4 @@
-# mycodescripts
+# My Scripts
 All of my notes on Python, JavaScript, HTML and scripts that I've made.
 
 # Next project:
